@@ -18,7 +18,18 @@ myFunction();
 
 // Explanation: 
 
+// The closure used in the nestedFunction allows the function to access references found in the outer function scope. This allows the nestedFunction to access the variable internal before initializing.
 
 /* Task 2: Counter */
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function sumattion (num) {
+  let total = 0;
+  for (let i=1; i<=num; i++) {
+    total += i;
+  }
+  return total;
+}
+
+console.log(sumattion(4));
